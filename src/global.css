@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+:root {
+    --corPrincipal: #0d5b92;
+    --corText: #707070;
+    --corTextDarker: #414040;
+    --corTextTabel:  #1f5eaf;
+    --corLine:  #e7e7e7;
+    --corBranca: #fff;
+    --corMagreza: rgba(0, 255, 255, 0.8);
+    --corNormal: rgba(172, 255, 47, 0.8);
+    --corLeveAcima: rgba(255, 255, 0, 0.8);
+    --corAcimaPeso: rgba(249, 153, 64, 0.8);
+    --corObesidade: rgba(251, 53, 53, 0.8);
+}

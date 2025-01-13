@@ -1,0 +1,53 @@
+.table__imc {
+    margin-top: 70px;
+    width: 560px;
+    line-height: 30px;
+    font-size: 13px;
+    border-spacing: 0;
+}
+
+th {
+    text-align: center;
+    background-color: var(--corPrincipal);
+    color: var(--corBranca);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+tbody {
+    color: var(--corTextDarker);
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid var(--corLine);
+    padding-left: 20px;
+    text-align: center;
+}
+
+.table__header {
+    color: var(--corTextTabel);
+    font-weight: bold;
+    border-bottom: 2px solid var(--corText);
+}
+
+.magreza {
+    background-color: var(--corMagreza);
+}
+
+.normal {
+    background-color: var(--corNormal);
+}
+
+.sobrepeso {
+    background-color: var(--corLeveAcima);
+}
+
+.obesidade {
+    background-color: var(--corAcimaPeso);
+}
+
+.grave {
+    background-color: var(--corObesidade);
+}
