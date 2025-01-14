@@ -16,10 +16,16 @@ const Formulario = () => {
             const calculoIMC = pesoFloat / alturaAoQuadrado;
             const imcFinal = parseFloat(calculoIMC.toFixed(2));
 
+            const retornImc = () => {
+                return (
+                    <p>seu imc: <span>{imcFinal}</span></p>
+                )
+            }
+
             if(imcFinal < 18.50) {
                 return (
                     <>
-                        <p>seu imc: <span>{imcFinal}</span></p>
+                        {retornImc()}
                         <p>Sua classificação: Magreza</p>
                     </>
                 )
@@ -27,7 +33,7 @@ const Formulario = () => {
             if(imcFinal >= 18.50 && imcFinal < 25.0) {
                 return (
                     <>
-                        <p>seu imc: <span>{imcFinal}</span></p>
+                        {retornImc()}
                         <p>Sua classificação: Peso ideal</p>
                     </>
                 );
@@ -35,7 +41,7 @@ const Formulario = () => {
             if(imcFinal >= 25.0 && imcFinal < 30.0) {
                 return (
                     <>
-                    <p>seu imc: <span>{imcFinal}</span></p>
+                    {retornImc()}
                     <p>Sua classificação: Levemente acima do peso</p>
                     </>
                 )
@@ -43,7 +49,7 @@ const Formulario = () => {
             if(imcFinal >= 30.0 && imcFinal < 40.0) {
                 return (
                     <>
-                        <p>seu imc: <span>{imcFinal}</span></p>
+                        {retornImc()}
                         <p>Sua classificação: Acima do peso</p>
                     </>
                 )
@@ -51,7 +57,7 @@ const Formulario = () => {
             else {
                 return (
                     <>
-                        <p>seu imc: <span>{imcFinal}</span></p>
+                        {retornImc()}
                         <p>Sua classificação: Obesidade</p>
                     </>
                 )
