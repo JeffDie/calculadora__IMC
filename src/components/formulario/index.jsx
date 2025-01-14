@@ -26,22 +26,34 @@ const Formulario = () => {
             }
             if(imcFinal >= 18.50 && imcFinal < 25.0) {
                 return (
-                    <p>seu imc: <span>{imcFinal}</span></p>
+                    <>
+                        <p>seu imc: <span>{imcFinal}</span></p>
+                        <p>Sua classificação: Peso ideal</p>
+                    </>
                 );
             }
             if(imcFinal >= 25.0 && imcFinal < 30.0) {
                 return (
+                    <>
                     <p>seu imc: <span>{imcFinal}</span></p>
+                    <p>Sua classificação: Levemente acima do peso</p>
+                    </>
                 )
             }
             if(imcFinal >= 30.0 && imcFinal < 40.0) {
                 return (
-                    <p>seu imc: <span>{imcFinal}</span></p>
+                    <>
+                        <p>seu imc: <span>{imcFinal}</span></p>
+                        <p>Sua classificação: Acima do peso</p>
+                    </>
                 )
             }
             else {
                 return (
-                    <p>seu imc: <span>{imcFinal}</span></p>
+                    <>
+                        <p>seu imc: <span>{imcFinal}</span></p>
+                        <p>Sua classificação: Obesidade</p>
+                    </>
                 )
             }
     
